@@ -14,9 +14,12 @@
         background: transparent;
         opacity: 10%;
 }
+.space-bg {
+    background: rgb(33,37,41);
+    background: linear-gradient(180deg, rgba(33,37,41,1) 35%, rgba(32,55,60,1) 100%);
+    min-height: 100vh;
+}
 
- .navAccordionDesktop{
-     
- }
-
- .navAccordionMobile{}
+.footer-roll {
+    max-height: 70px;
+}
