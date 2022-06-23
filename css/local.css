@@ -1,3 +1,5 @@
+/* Navigation */
+
 .navflow {
         text-transform: uppercase;
         background-color: transparent;
@@ -12,3 +14,9 @@
         background: transparent;
         opacity: 10%;
 }
+
+ .navAccordionDesktop{
+     
+ }
+
+ .navAccordionMobile{}

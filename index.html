@@ -6,8 +6,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Rollmageddon: RPG</title>
-    <link rel="icon" type="image/x-icon" href="##/favicon.ico">
-    <link href="./local.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/res/favicon.ico">
+    <link href="/css/local.css" rel="stylesheet">
     
       <!-- Bootstrap CSS -->
     <!-- JavaScript Bundle with Popper -->
@@ -20,7 +20,7 @@
      
         <nav class="navbar sticky-top navbar-expand-md navbar-dark navflow-other mb-4">
     <div class="container-fluid">
-      <a class="navbar-brand" href="/index.html"><img height="35px" src="res/logo.svg"> </a>
+      <a class="navbar-brand" href="/index.html"><img height="35px" src="/res/logo.svg"> </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -28,8 +28,22 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <li class="nav-item">
-            <a class="nav-link" href="./setting.html">Settings</a>
-          </li>
+            <a class="nav-link dropdown-toggle" href="#">Campaigns</a>
+          <ul class="dropdown-menu" role="menu">
+            <li id="menuitem-rpg" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent">
+              <a title="Campaigns" href="/setting.html">Campaigns</a>
+            </li>
+            <li id="menuitem-monument" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent">
+              <a title="Monument" href="/setting.html#monument">Coriolis: Monument</a>
+            </li>
+            <li id="menuitem-chimera" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent">
+              <a title="Chimera" href="/setting.html#chimera">Alien: Chimera</a>
+            </li>
+            <li id="menuitem-designs" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent">
+              <a title="Designs" href="/setting.html#designs">Grand Designs</a>
+            </li>
+          </ul>
+        </li>
           <li class="nav-item">
             <a class="nav-link" href="/index.html#4">Podcasts</a>
           </li>
