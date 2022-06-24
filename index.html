@@ -7,6 +7,10 @@
         <meta name="author" content="" />
         <title>Rollmageddon: RPG</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
@@ -26,18 +30,25 @@
         <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
             <div class="container">
                 <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="index.html">Rollmageddon</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="navbar-collapse navbar-expand-sm" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="index.html">Home</a></li>
                         <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="about.html">About</a></li>
-                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="products.html">Campaigns</a></li>
-                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="store.html">Podcasts</a></li>
-                        <li id="menu-item-6527" class="menu-item-has-children menu-item-6527 nav-item dropdown"><a title="Bootstrap 4/5" href="#" class="dropdown-toggle nav-link">Bootstrap 4/5 <span class="caret-wrap"><span class="caret"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down" class="svg-inline--fa fa-chevron-down fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span></span></a>
-                          <ul role="menu" class="dropdown-menu">
-                            <li id="menu-item-6072" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent nav-item menu-item-6072"><a class="nav-link" title="Bootstrap 5" href="https://www.markuptag.com/category/bootstrap-5/">Bootstrap 5</a><span class="hestia-mm-description">Bootstrap 5 examples with free UI kit source code. All the Bootstrap components and layouts are created by using the new version Bootstrap 5 framework. With the help of Bootstrap 5 templates and small components examples, we can quickly get the start and finish new projects. Bootstrap 5 Components See all the list of Bootstrap components that are created by using Bootstrap like an accordion, alerts, badge, Breadcrumb, buttons, button group, card, carousel, close button, collapse, dropdowns, list group, modal, navs &amp; tabs, navbar, pagination, popovers, progress, scroll spy, spinners, toasts, tooltips, tables, and forms control examples Bootstrap 5 Layout Styles Bootstrap provides us various options to manage and customize the design according to client requirements. For example Bootstrap breakpoints, container, container-fluid, grid, columns, gutters, utilities, and z-index.</span></li>
-                            <li id="menu-item-6071" class="menu-item menu-item-type-taxonomy menu-item-object-category nav-item menu-item-6071"><a class="nav-link" title="Bootstrap 4" href="https://www.markuptag.com/category/bootstrap-4/">Bootstrap 4</a><span class="hestia-mm-description">Bootstrap 4 is a front-end framework. By using Bootstrap 4 we can build a mobile-first responsive website. Bootstrap 4 Providing us pre-define components and examples that are more important and useful snippets for our project. The Bootstrap 4 gives us ready-made responsive code snippets like modal, CDN links, table, form, grid, carousel, navbar, menus, button, cards, accordion, icons, input group, full documentation, columns grids, responsive table, templates, spinner, slider, popover, badge, dropdown, pagination, image responsive, and many more components.</span></li>
-                          </ul>
+                        <li class="nav-item px-lg-4 dropdown">
+                          <a title="Campaigns" href="#" data-toggle="dropdown" class="dropdown-toggle nav-link text-uppercase">Campaigns</a>
+                          <div class="dropdown-menu dropdown-nav">
+                            <a class="nav-link nav-dropdown-body text-uppercase" href="/products.html#monument">Coriolis: The Monument</a>
+                            <a class="nav-link nav-dropdown-body text-uppercase" href="/products.html#chimera">Alien: Chimera</a>
+                            <a class="nav-link nav-dropdown-body text-uppercase" href="/products.html#designs">Grand Designs</a>
+                          </div>
+                        </li>
+                        <li class="nav-item px-lg-4 dropdown">
+                          <a title="Podcasts" href="#" data-toggle="dropdown" class="dropdown-toggle nav-link text-uppercase">Podcasts</a>
+                          <div class="dropdown-menu dropdown-nav">
+                            <a class="nav-link nav-dropdown-body text-uppercase" href="/store.html#monument">Coriolis: The Monument</a>
+                            <a class="nav-link nav-dropdown-body text-uppercase" href="/store.html#chimera">Alien: Chimera</a>
+                            <a class="nav-link nav-dropdown-body text-uppercase" href="/store.html#designs">Grand Designs</a>
+                          </div>
                         </li>
                     </ul>
                 </div>
