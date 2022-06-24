@@ -11295,18 +11295,6 @@ body {
   background-size: cover;
 }
 
-parallax-l1 {
-  /* parallax layer 1 stuff */
-}
-
-parallax-l2 {
-  /* parallax layer 2 stuff */
-}
-
-parallax-l3 {
-  /* parallax layer 3 stuff */
-}
-
 p {
   line-height: 1.75;
 }
@@ -11506,4 +11494,36 @@ p {
 .dropdown-nav {
   background-color: #212121;
   color: #fff;
+}
+
+parallax-l0 {
+  /* foreground */
+  -webkit-transform: translateZ(90px) scale(.7);
+  transform: translateZ(90px) scale(.7);
+  z-index: 3;
+  float: left;
+  background-image: "/assets/img/sat.png";
+}
+
+parallax-l1 {
+  /* parallax layer 1 stuff */
+  -webkit-transform: translateZ(-600px) scale(3);
+  transform: translateZ(-600px) scale(3);
+  z-index: 4;
+  float: right;
+  background-image: "/assets/img/station.png";
+}
+
+parallax-l2 {
+  /* parallax layer 2 stuff */
+  -webkit-transform: translateZ(-300px) scale(2);
+  transform: translateZ(-300px) scale(2);
+  z-index: 3;
+}
+
+parallax-l3 {
+  /* parallax layer 3 stuff */
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  z-index: 4;
 }
