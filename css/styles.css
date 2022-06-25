@@ -11289,7 +11289,7 @@ textarea.form-control-lg {
 }
 
 body {
-  background-image: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url("/assets/img/no-craft.png");
+  background-image: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url("https://raw.githubusercontent.com/rollmageddon-rpg/site/main/assets/img/bg.jpg");
   z-index: 0;
   background-attachment: fixed;
   background-position: center;
@@ -11502,7 +11502,7 @@ parallax-l0 {
   -webkit-transform: translateZ(90px) scale(.7);
   transform: translateZ(90px) scale(.7);
   z-index: 3;
-  background-image: "/assets/img/sat.png";
+  background-image: "assets/img/sat.png";
 }
 
 parallax-l1 {
@@ -11510,5 +11510,5 @@ parallax-l1 {
   -webkit-transform: translateZ(-600px) scale(3);
   transform: translateZ(-600px) scale(3);
   z-index: 4;
-  background-image: "/assets/img/station.png";
+  background-image: "assets/img/station.png";
 }
