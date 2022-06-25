@@ -7,6 +7,10 @@
         <meta name="author" content="" />
         <title>Rollmageddon: RPG</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
@@ -23,20 +27,33 @@
             </h1>
         </header>
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="index.html">Rollmageddon</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="index.html">Home</a></li>
-                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="about.html">About</a></li>
-                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="products.html">Campaigns</a></li>
-                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="store.html">Podcasts</a></li>
-                    </ul>
-                </div>
+      <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="index.html">Rollmageddon</a>
+            <div class="navbar-collapse navbar-expand-sm" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="index.html">Home</a></li>
+                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="about.html">About</a></li>
+                    <li class="nav-item px-lg-4 dropdown">
+                      <a title="Campaigns" href="#" data-toggle="dropdown" class="dropdown-toggle nav-link text-uppercase">Campaigns</a>
+                      <div class="dropdown-menu dropdown-nav">
+                        <a class="nav-link nav-dropdown-body text-uppercase" href="/campaigns.html#monument">Coriolis: The Monument</a>
+                        <a class="nav-link nav-dropdown-body text-uppercase" href="/campaigns.html#chimera">Alien: Chimera</a>
+                        <a class="nav-link nav-dropdown-body text-uppercase" href="/campaigns.html#designs">Grand Designs</a>
+                      </div>
+                    </li>
+                    <li class="nav-item px-lg-4 dropdown">
+                      <a title="Podcasts" href="#" data-toggle="dropdown" class="dropdown-toggle nav-link text-uppercase">Podcasts</a>
+                      <div class="dropdown-menu dropdown-nav">
+                        <a class="nav-link nav-dropdown-body text-uppercase" href="/podcasts.html#monument">Coriolis: The Monument</a>
+                        <a class="nav-link nav-dropdown-body text-uppercase" href="/podcasts.html#chimera">Alien: Chimera</a>
+                        <a class="nav-link nav-dropdown-body text-uppercase" href="/podcasts.html#designs">Grand Designs</a>
+                      </div>
+                    </li>
+                </ul>
             </div>
-        </nav>
+        </div>
+    </nav>
         <section class="page-section">
             <div class="container">
                 <div class="product-item">
@@ -44,7 +61,7 @@
                         <div class="bg-faded p-5 d-flex ms-auto rounded">
                             <h2 class="section-heading mb-0">
                                 <span class="section-heading-upper">Currently on:</span>
-                                <span class="section-heading-lower">Coriolis: The Monument</span>
+                                <span id="monument" class="section-heading-lower">Coriolis: The Monument</span>
                             </h2>
                         </div>
                     </div>
@@ -62,7 +79,7 @@
                         <div class="bg-faded p-5 d-flex me-auto rounded">
                             <h2 class="section-heading mb-0">
                                 <span class="section-heading-upper">Deep Space Exploration campaign:</span>
-                                <span class="section-heading-lower">Alien: Chimera</span>
+                                <span id="chimera" class="section-heading-lower">Alien: Chimera</span>
                             </h2>
                         </div>
                     </div>
@@ -80,7 +97,7 @@
                         <div class="bg-faded p-5 d-flex ms-auto rounded">
                             <h2 class="section-heading mb-0">
                                 <span class="section-heading-upper">Our first campaign:</span>
-                                <span class="section-heading-lower">Grand Designs</span>
+                                <span id="designs" class="section-heading-lower">Grand Designs</span>
                             </h2>
                         </div>
                     </div>
