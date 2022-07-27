@@ -28,35 +28,12 @@
               <span class="site-heading-lower">Rollmageddon</span>
           </h1>
       </header>
-      <!-- Navigation-->
-      <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
-          <div class="container">
-              <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="index.html">Rollmageddon</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-              <div class="navbar-collapse collapse navbar-expand-sm" id="navbarSupportedContent">
-                  <ul class="navbar-nav mx-auto">
-                      <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="index.html">Home</a></li>
-                      <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="about.html">About</a></li>
-                      <li class="nav-item px-lg-4 dropdown">
-                        <a title="Campaigns" href="#" data-toggle="dropdown" class="dropdown-toggle nav-link text-uppercase">Campaigns</a>
-                        <div class="dropdown-menu dropdown-nav">
-                          <a class="nav-link nav-dropdown-body text-uppercase" href="campaigns.html#monument">Coriolis: The Monument</a>
-                          <a class="nav-link nav-dropdown-body text-uppercase" href="campaigns.html#chimera">Alien: Chimera</a>
-                          <a class="nav-link nav-dropdown-body text-uppercase" href="campaigns.html#designs">Grand Designs</a>
-                        </div>
-                      </li>
-                      <li class="nav-item px-lg-4 dropdown">
-                        <a title="Podcasts" href="#" data-toggle="dropdown" class="dropdown-toggle nav-link text-uppercase">Podcasts</a>
-                        <div class="dropdown-menu dropdown-nav">
-                          <a class="nav-link nav-dropdown-body text-uppercase" href="podcasts.html#monument">Coriolis: The Monument</a>
-                          <a class="nav-link nav-dropdown-body text-uppercase" href="podcasts.html#chimera">Alien: Chimera</a>
-                          <a class="nav-link nav-dropdown-body text-uppercase" href="podcasts.html#designs">Grand Designs</a>
-                        </div>
-                      </li>
-                  </ul>
-              </div>
-          </div>
-      </nav>
+      <div id="navBar"></div>
+      <script>
+        $(function(){
+          $("#navBar").load("assets/text/nav.html");
+        })
+      </script>
       <section class="page-section clearfix">
           <div class="container">
               <div class="intro">
